@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: flask-eks-image
-          image: 440896245143.dkr.ecr.us-west-2.amazonaws.com/webapp:3031831ab13f3e985f14171ce7661a43996ef95b 
+          image: 440896245143.dkr.ecr.us-west-2.amazonaws.com/webapp:4553c8e8b6d7f4eb0169815d7a06760ab44d2c04 
           ports:
             - containerPort: 5000
