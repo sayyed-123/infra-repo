@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: server-demo
+  name: flask-eks-deployment
   namespace: default
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: web
+      app: flask-eks
   template:
     metadata:
       labels:
-        app: web
+        app: flask-eks
     spec:
       containers:
-        - name: back-end
+        - name: flask-eks-image
           image: 440896245143.dkr.ecr.us-west-2.amazonaws.com/webapp:3031831ab13f3e985f14171ce7661a43996ef95b 
           ports:
             - containerPort: 5000
